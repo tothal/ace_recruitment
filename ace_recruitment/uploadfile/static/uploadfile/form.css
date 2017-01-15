@@ -1,0 +1,112 @@
+body{
+  background-color: 	#F8F7FC;
+}
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 15px;
+  width: auto;
+}
+.example2 .navbar-brand>img {
+  padding: 7px 15px;
+}
+.navbar{
+  font-family:'MinionPro', regular;
+  font-size: 120%;
+  margin: 0!important;
+  color:#666666;
+}
+.navbar .dropdown-menu{
+  font-size: 100%;
+}
+.forms{
+  font-family: 'Francois One', sans-serif;
+  width:500px;
+  padding: 20px;
+  background: white;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    -webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
+
+}
+.forms h1{
+  text-transform: uppercase;
+  font-family: 'Francois One', sans-serif;
+  color: #737279;
+  font-size:18px;
+  font-weight: 100;
+  padding:40px;
+  margin: -30px -30px -30px -30px;
+}
+.forms input[type="text"],
+.forms input[type="email"]
+{
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  outline: none;
+  display: block;
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  background: transparent;
+  margin-bottom: 10px;
+  font-family:'MinionPro', regular;
+  font-size: 25px;
+  height: 45px;
+}
+.file-upload3{
+    background-color: black;
+    display: inline-block;
+    color: white;
+    font-family: 'Francois One', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+	  cursor: pointer;
+    width: 440px;
+}
+.file-upload {
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+}
+.file-upload input.upload {
+   position: absolute;
+   top: 0;
+   right: 0;
+   margin: 0;
+   padding: 0;
+   bottom: 0;
+   left:0;
+   cursor: pointer;
+   opacity: 0;
+   filter: alpha(opacity=0);
+   width:100%;
+ }
+p{
+  font-family: 'MinionPro', regular;
+  font-size: 40px;
+  padding-top: 60px;
+}
+label.myLabel input[type="file"]{
+    position: fixed;
+    top: -1000px;
+}
+.myLabel {
+  background-color: #FF7904;
+  display: inline-block;
+  color: #FFFFFF;
+  font-family: 'Francois One', sans-serif;
+  font-size: 20px;
+  margin:10px;
+  padding: 10px;
+}
+#footer{
+  bottom: 0;
+  position: relative;
+  text-align: center;
+  font-family: 'MinionPro',regular;
+}

@@ -1,0 +1,66 @@
+body{
+  background-color: 	#F8F7FC;
+}
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 15px;
+  width: auto;
+}
+.example2 .navbar-brand>img {
+  padding: 7px 15px;
+}
+.navbar{
+  font-family:'MinionPro', regular;
+  font-size: 120%;
+  margin: 0!important;
+  color:#666666;
+}
+.navbar .dropdown-menu{
+  font-size: 100%;
+}
+.CV-heading{
+  font-family: 'MinionPro', regular;
+  font-size: 150%;
+  color:black;
+}
+.upload-box{
+  background-color: white;
+  padding: 2%;
+  border-style: thick;
+  border-left: solid #FF7904;
+  -webkit-box-shadow: 10px 10px 41px -5px rgba(0,0,0,0.35);
+  -moz-box-shadow: 10px 10px 41px -5px rgba(0,0,0,0.35);
+  box-shadow: 10px 10px 41px -5px rgba(0,0,0,0.35);
+}
+span.backspace{
+  margin-left: -104px;
+}
+span.orange{
+  color: #FF5900!important;
+}
+span.heading{
+  font-family: 'Francois One', sans-serif;
+  color:black;
+  font-size: 150%;
+}
+.button input[type="button"]{
+  background-color: #FF7904;
+  border: 1px solid #FF5900;
+  display: inline-block;
+  cursor: pointer;
+  color: #FFFFFF;
+  font-family: 'Francois One', sans-serif;
+  font-size: 150%;
+  padding: 8px 18px;
+}
+#footer{
+  right:0;
+  bottom: 0;
+  left:0;
+  position: relative;
+  text-align: center;
+  font-family: 'MinionPro',regular;
+}

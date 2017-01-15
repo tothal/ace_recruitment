@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+	<link href="{% static 'ace/jobs.css' %}" rel="stylesheet" type="text/css">
+
+	<link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-default example2">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar2">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">
+					<img src="https://florian996.files.wordpress.com/2016/11/ace-logo1.png?w=840" alt="Dispute Bills">
+        </a>
+      </div>
+      <div id="navbar2" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/about_us/">About Us</a></li>
+          <li><a href="/for_jobseekers/">For Jobseekers</a></li>
+					<li><a href="/jobs/">Jobs</a></li>
+					<li><a href="/contact/">Contact</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Language <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">English</a></li>
+              <li><a href="#">Deutsch</a></li>
+              <li><a href="#">Romana</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+  </nav><br><br>
+
+<!--ASTA DE SUB E LABAREALA(asta ramane aici si la finalul codului)-->
+{% for job in jobs %}
+	<a href="{% url 'detail' job.id %}">
+	<div class="container ad">
+		<div class="row">
+			<div class="col-md-2">
+				<img class="logo" src="{{ job.company_logo.url }}" alt="logo missing"></img>
+			</div>
+			<div class="col-md-10">
+				<h1>{{ job.pub_date }}</h1>
+				<h2>{{ job.title }}</h2>
+				<h1>{{ job.company_name }}</h1>
+				<h3>{{ job.short_description }}</h3>
+			</div>
+		</div>
+	</div></a><br><br>
+{% endfor %}
+	<!--AICI SE TERMINA LABAREALA-->
+
+</body>
+<footer class="container-fluid">
+  &copy ACE Recruitment 2017. All Rights Reserved.
+    </footer>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="{% static 'ace/homepage.css' %}" />
+
+	<link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-default example2">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar2">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">
+					<img src="https://florian996.files.wordpress.com/2016/11/ace-logo1.png?w=840" alt="Dispute Bills">
+        </a>
+      </div>
+      <div id="navbar2" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/about_us/">About Us</a></li>
+          <li><a href="/for_jobseekers/">For Jobseekers</a></li>
+					<li><a href="/jobs/">Jobs</a></li>
+					<li><a href="/contact/">Contact</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Language <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">English</a></li>
+              <li><a href="#">Deutsch</a></li>
+              <li><a href="#">Romana</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+  </nav><br><br>
+
+	<div class="container-fluid bgimg">
+		<div class="row text-center">
+			<div class="title1">
+			Welcome!
+		</div>
+
+		<div class="title2">
+			Who says that finding or filling a job has to be such hard work?<br>
+	Let your search <span class="orange">start and end</span> right here!
+
+	</div>
+	</div>
+</div><br>
+
+<div class="container upload-box">
+	<div class="row">
+		<div class="CV-heading col-md-10">
+			With one single click you will open a door to a multitude of opportunities.
+		</div>
+		
+		<div class="col-md-2 button">
+			<form action="/form/">
+			
+			<input type="submit" value="Upload your CV" />
+			
+		<!---	<a href="/form/" class="btn">Upload your CV!</a> --->
+		
+		</form>
+		</div>
+	</div>
+</div>
+</body>
+
+<footer class="container-fluid">
+  &copy ACE Recruitment 2017. All Rights Reserved.
+    </footer>
+
+</html>
